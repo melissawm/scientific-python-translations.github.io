@@ -9,7 +9,7 @@ You can also see [a similar guide in video format on YouTube]().
 
 ### 1. Create Crowdin profile
 
-First, navigate to https://scientific-python.crowdin.com/ - note you will be logging in/signing up to a Crowdin Enterprise account.
+First, navigate to https://scientific-python.crowdin.com/ - note you will be logging in to or signing up for a Crowdin Enterprise account.
 
 Create a username and password, or log in with your credentials (if you already have a GitHub account, you can use that to log in).
 
