@@ -25,7 +25,7 @@ grant.
 type = 'card'
 title = 'See'
 body = '''
-Translations into Brazlian and Portuguese already published for https://numpy.org/!
+Translations into Brazilian Portuguese and Japanese are already published for https://numpy.org/!
 '''
 
 {{< /grid >}}
