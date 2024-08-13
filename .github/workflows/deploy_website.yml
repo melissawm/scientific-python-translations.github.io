@@ -33,6 +33,9 @@ jobs:
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.131.0/hugo_extended_0.131.0_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
+      - name: Install Dart Sass Embedded # Installs dart-sass
+        run: sudo snap install dart-sass-embedded
+
       - name: Build with Hugo
         run: |
           git submodule update --init --recursive  # fetch theme
