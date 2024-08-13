@@ -35,7 +35,8 @@ jobs:
 
       - name: Build with Hugo
         run: |
-          hugo --gc
+          git submodule update --init --recursive  # fetch theme
+          make html
 
       - name: Deploy pages
         uses: actions/deploy-pages@v4
