@@ -41,10 +41,13 @@ jobs:
           git submodule update --init --recursive  # fetch theme
           make html
 
-      - name: Deploy pages
-        uses: actions/deploy-pages@v4
-        with:
-          folder: ./public
-          repository-name: scientific-python-translations/scientific-python-translations.github.com
-          branch: main
-          token: ${{ secrets.PERSONAL_TOKEN }}
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: github-pages
+        path: ./public/artifact.tar
+
+    - name: Deploy pages
+      uses: actions/deploy-pages@v4
+      with:
+        token: ${{ secrets.PERSONAL_TOKEN }}
