@@ -39,9 +39,12 @@ part of your website deployment process (see, for example,
 
 {{< admonition important >}}
 To prevent future conflicts with the GitHub/Crowdin integration, it is important
-that you set your translations to duplicate strings to be an exact match:
+that you set your translations to duplicate strings to be an exact match. To do
+this, navigate to your project's Settings in Crowdin, select Import and under
+"Source strings" -> "Duplicates" choose "Hide (regular detection)".
 
-screenshot
+<center><img alt="Screenshot of the Crowdin Settings showing the 'Hide (regular detection)' option." src="../images/duplicate_strings.png" width=800/></center>
+
 {{< /admonition >}}
 
 ## Merging translations
