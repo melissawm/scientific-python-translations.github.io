@@ -71,8 +71,7 @@ translations for the language you selected (see
 [numpy/numpy.org#774](https://github.com/numpy/numpy.org/pull/774) for an example.) This PR should be
 merged when you are ready to publish the translations.
 
-After merging the translations PR, you should **delete the corresponding branch** and
-re-create it from scratch. This will prevent conflicts with future translations.
+After merging the translations PR, the Crowdin service branch (by default, named `l10n_main`) will have merge conflicts with `main`. To fix this, delete the Crowdin service branch. Crowdin will automatically recreate the service branch with merge conflicts resolved. This same process can also be used to resolve merge conflicts if translations are updated outside of Crowdin. (Setting the duplicate strings setting to *Hide (regular detection) - all duplicates will share the same translation* makes Crowdin better able to resolve merge conflicts without un-translating strings).
 
 ## Setting up a language switcher
 
