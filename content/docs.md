@@ -22,7 +22,7 @@ Given a GitHub repository which has been synced to Crowdin, the
 is used to create a new branch including all (and only) commits from Crowdin's
 branch for a particular language of interest. This script is useful because:
 
-1. Crowdin will keep commits for all languages under translation under the same
+1. Crowdin will keep commits for all languages under translation in the same
    branch. However, we prefer to be able to create, review, and merge pull
    requests for one language at a time.
 
@@ -35,14 +35,21 @@ branch for a particular language of interest. This script is useful because:
 
 Ideally you will **not** have to run this script directly, but can include it as
 part of your website deployment process (see, for example,
-https://github.com/numpy/numpy.org/pull/772)
+[numpy/numpy.org#772](https://github.com/numpy/numpy.org/pull/772))
+
+{{< admonition important >}}
+To prevent future conflicts with the GitHub/Crowdin integration, it is important
+that you set your translations to duplicate strings to be an exact match:
+
+screenshot
+{{< /admonition >}}
 
 ## Merging translations
 
 As translators work on the Crowdin platform, a Pull Request is automatically
 created in the project repository. This PR **should not** be merged, as it
 contains all translations for all languages (see
-https://github.com/numpy/numpy.org/pull/778 for an example). If your website is
+[numpy/numpy.org#778](https://github.com/numpy/numpy.org/pull/778) for an example). If your website is
 set up through the Scientific Python Translations org, this PR will have the
 `do-not-merge` label applied to it.
 
@@ -61,18 +68,21 @@ should:
 
 After these steps, a PR will be created to your website repo with the
 translations for the language you selected (see
-https://github.com/numpy/numpy.org/pull/774 for an example.) This PR should be
+[numpy/numpy.org#774](https://github.com/numpy/numpy.org/pull/774) for an example.) This PR should be
 merged when you are ready to publish the translations.
+
+After merging the translations PR, you should **delete the corresponding branch** and
+re-create it from scratch. This will prevent conflicts with future translations.
 
 ## Setting up a language switcher
 
-Ideally, the dropdown will be populated automatically.
-
-(to be completed)
+This work is in progress - follow (issue #) for details.
 
 ### Scientific Python Hugo Theme
 
 ### PyData Sphinx Theme
+
+This work is in progress - follow [pydata/pydata-sphinx-theme#507](https://github.com/pydata/pydata-sphinx-theme/issues/507) for details.
 
 ## Known limitations
 
