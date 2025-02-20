@@ -1,5 +1,5 @@
 ---
-title: "Documentation for maintainers"
+title: "Maintainers' documentation"
 draft: false
 ---
 
@@ -13,18 +13,18 @@ https://github.com/Scientific-Python-Translations/automations/.
 
 ## Integration with Crowdin
 
-Crowdin provides GitHub integration tools to sync all translated content from
-the Crowdin web interface into project websites and vice-versa. However, a few
-adaptations are needed.
+[Crowdin](https://scientific-python.crowdin.com/) provides GitHub integration
+tools to sync all translated content from the Crowdin web interface into project
+websites and vice-versa. However, a few adaptations are needed.
 
-Given a GitHub repository which has been synced to Crowdin, the
+Once a GitHub repository has been synced to Crowdin, the
 [`create_branch_for_language.sh` script](https://github.com/Scientific-Python-Translations/automations/blob/main/scripts/create_branch_for_language.sh)
 is used to create a new branch including all (and only) commits from Crowdin's
 branch for a particular language of interest. This script is useful because:
 
-1. Crowdin will keep commits for all languages under translation in the same
-   branch. However, we prefer to be able to create, review, and merge pull
-   requests for one language at a time.
+1. Crowdin will keep commits for all the available languages under translation
+   in the same branch. However, we prefer to be able to create pull requests for
+   one language at a time to keep Pull Request reviews smaller and easier to manage.
 
 2. There are times when translations must be edited manually (outside of
    Crowdin) due to incorrect segmentation of the content into strings for
@@ -33,9 +33,9 @@ branch for a particular language of interest. This script is useful because:
    synced. By creating a new branch with only the commits we are interested in,
    we can bypass this limitation.
 
-Ideally you will **not** have to run this script directly, but can include it as
-part of your website deployment process (see, for example,
-[numpy/numpy.org#772](https://github.com/numpy/numpy.org/pull/772))
+Ideally you will **not** have to run the `create_branch_for_language.sh` script
+directly, but can include it as part of your website deployment process (see,
+for example, [numpy/numpy.org#772](https://github.com/numpy/numpy.org/pull/772))
 
 {{< admonition important >}}
 To prevent future conflicts with the GitHub/Crowdin integration, it is important
@@ -90,7 +90,7 @@ This work is in progress - follow [pydata/pydata-sphinx-theme#507](https://githu
 
 ### Missing translations
 
-For items such as news items and release announcements, translations may not
-always be up to date. In this case, your project can decide what to do with
-these items (for example, keep them in english or hide them from the deployed
+Translations may not always be up to date for items such as news items and
+release announcements. In this case, your project can decide what to do with
+these items (for example, keep them in English or hide them from the deployed
 site.)
