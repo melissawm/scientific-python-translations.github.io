@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-us" data-colorscheme="auto" >
+  <head>
+    <!-- Generated 2025-03-06 16:02:58 UTC -->
+    <meta name="description" content="Documentation &amp; FAQ for Scientific Python Translations project." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Scientific Python Translations - Maintainers&#39; documentation</title>
+
+    
+    <link rel="icon" href="../images/favicon.ico" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900">
+
+  
+      <link rel="stylesheet" type="text/css" href="../theme-css/sphinx-design/index.scss.min.acf226aa2ff428a500491b1393bef415c3883113dac542174f5814fba5532592.css" integrity="sha256-rPImqi/0KKUASRsTk770FcOIMRPaxUIXT1gU&#43;6VTJZI=">  
+      <link rel="stylesheet" type="text/css" href="../theme-css/pst/pydata-sphinx-theme.scss.min.58fb15284beea1eda8d2e3ec5411442db1f2f0e344fe0e0b9fbe971f4b212dd5.css" integrity="sha256-WPsVKEvuoe2o0uPsVBFELbHy8ONE/g4Ln76XH0shLdU=">  
+      <link rel="stylesheet" type="text/css" href="../theme-css/spht/index.scss.min.ad03de1683bb39a0d1b31395797b97188e59cda6d778c0671a99db0b4fb799a9.css" integrity="sha256-rQPeFoO7OaDRsxOVeXuXGI5ZzabXeMBnGpnbC0&#43;3mak=">
+    <link rel="stylesheet" href="../theme-css/backtotop.min.1311d3ff614d3e21e2297a08d85afafc846abe106c6228142e59d28c4924bf85.css" integrity="sha256-ExHT/2FNPiHiKXoI2Fr6/IRqvhBsYigULlnSjEkkv4U=">
+    <link rel="stylesheet" href="../theme-css/bulma.min.f488b160722c9b7a2a760c03808dc8df5173e6c9dd25cb7481451ddb3c4f35dc.css" integrity="sha256-9IixYHIsm3oqdgwDgI3I31Fz5sndJct0gUUd2zxPNdw=">
+    <link rel="stylesheet" href="../theme-css/code-highlight.min.d0bd96ff1dbeb4b62536da5935b92af5cd7edb6d6f52b316d721e62078d9f089.css" integrity="sha256-0L2W/x2&#43;tLYlNtpZNbkq9c1&#43;221vUrMW1yHmIHjZ8Ik=">
+    <link rel="stylesheet" href="../theme-css/content.min.1de9b096ffc099fee4b538589fea6b622be33d69de64c451e11f2c91476029c5.css" integrity="sha256-Hemwlv/Amf7ktThYn&#43;prYivjPWneZMRR4R8skUdgKcU=">
+    <link rel="stylesheet" href="../theme-css/dark-mode.min.5acf8f4101cd9f24228036af1488ce5c137f9c7e45fbc9c24c20200ea5140ac0.css" integrity="sha256-Ws&#43;PQQHNnyQigDavFIjOXBN/nH5F&#43;8nCTCAgDqUUCsA=">
+    <link rel="stylesheet" href="../theme-css/footer.min.d6c24234a3a1989d4abb05864bcc7efc30b21acfcb9986a746b479e56696430d.css" integrity="sha256-1sJCNKOhmJ1KuwWGS8x&#43;/DCyGs/LmYanRrR55WaWQw0=">
+    <link rel="stylesheet" href="../theme-css/hero.min.9812993c6f7a6d604f195dc04360091765329a177e902c01e0498cb374d59943.css" integrity="sha256-mBKZPG96bWBPGV3AQ2AJF2Uymhd&#43;kCwB4EmMs3TVmUM=">
+    <link rel="stylesheet" href="../theme-css/lists.min.83821789384ebadc1a1ff75ef9f4b29ba53fe45eb30a46a228aa55772a393396.css" integrity="sha256-g4IXiThOutwaH/de&#43;fSym6U/5F6zCkaiKKpVdyo5M5Y=">
+    <link rel="stylesheet" href="../theme-css/navbar.min.c15f7eadb5a7e1532309c04d94e1b0099d4fa75aaded30829bbfd21ebdb51ad5.css" integrity="sha256-wV9&#43;rbWn4VMjCcBNlOGwCZ1Pp1qt7TCCm7/SHr21GtU=">
+    <link rel="stylesheet" href="../theme-css/news.min.62943c02a887889d7c85164c2fdb2a86c788d3fd5a790a57e226862610f3c189.css" integrity="sha256-YpQ8AqiHiJ18hRZML9sqhseI0/1aeQpX4iaGJhDzwYk=">
+    <link rel="stylesheet" href="../theme-css/posts.min.9505f87d5973f3f08c99c613c0781b3a42411f4795657e8da7ef29c7ad37c23d.css" integrity="sha256-lQX4fVlz8/CMmcYTwHgbOkJBH0eVZX6Np&#43;8px603wj0=">
+    <link rel="stylesheet" href="../theme-css/shortcuts.min.f90addf0a2a3c4e075eb5c3c78e4cc27d9b4fba18a02a17808695212762224c1.css" integrity="sha256-&#43;Qrd8KKjxOB161w8eOTMJ9m0&#43;6GKAqF4CGlSEnYiJME=">
+    <link rel="stylesheet" href="../theme-css/styles.min.c02a1370464d07f086121a6383174fcc644194c58208778f1e0898381fd612a2.css" integrity="sha256-wCoTcEZNB/CGEhpjgxdPzGRBlMWCCHePHgiYOB/WEqI=">
+    <link rel="stylesheet" href="../theme-css/tables.min.7a44b6bd698323dd3d379b714bd534132e76bf4ba0d3dec61997a8d9ba9db5fb.css" integrity="sha256-ekS2vWmDI909N5txS9U0Ey52v0ug097GGZeo2bqdtfs=">
+    <link rel="stylesheet" href="../theme-css/tabs.min.8884c317231b5f2331b2fd9f65e4f7900fe9124aafae93b78cef175960289683.css" integrity="sha256-iITDFyMbXyMxsv2fZeT3kA/pEkqvrpO3jO8XWWAoloM=">
+    <link rel="stylesheet" href="../theme-css/vars.min.f6bb17e812a3e9632b27008726ca7ca54a4ca25e5525214597343727cac29039.css" integrity="sha256-9rsX6BKj6WMrJwCHJsp8pUpMol5VJSFFlzQ3J8rCkDk=">
+    <link rel="stylesheet" href="../theme-css/videos.min.41c135abe8361308f9258975985342fc3107ddc6440698251dd72e2b909cdaaa.css" integrity="sha256-QcE1q&#43;g2Ewj5JYl1mFNC/DEH3cZEBpglHdcuK5Cc2qo=">
+    <link rel="stylesheet" href="../css/custom.min.2698609718f69f5c535dee371a63a1884c6c6153fb0eba47d754751c38547e11.css" integrity="sha256-Jphglxj2n1xTXe43GmOhiExsYVP7DrpH11R1HDhUfhE=">
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
+
+    
+    <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://scientific-python-translations.github.io/images/logo.svg" /><meta name="twitter:title" content="Maintainers&#39; documentation"/>
+<meta name="twitter:description" content="This page details existing patterns for setting up and deploying translations for project websites. As each project has their own set up, the patterns described here may not fit exactly, but they will help you understand the basic workflows.
+At least some of the tasks described here rely on scripts from https://github.com/Scientific-Python-Translations/automations/.
+Integration with Crowdin# Crowdin provides GitHub integration tools to sync all translated content from the Crowdin web interface into project websites and vice-versa."/>
+
+  </head>
+  <body>
+    
+    
+<nav id="nav" class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../">
+        <img class="navbar-logo" src="../images/logo.svg" alt="%!s(&lt;nil&gt;) logo">
+        <div class="navbar-logo-text">Scientific Python Translations</div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbar-menu" class="navbar-menu">
+
+      <div class="navbar-end">
+        <a href="../docs/" class="navbar-item">
+          Documentation
+        </a>
+        <a href="../faq/" class="navbar-item">
+          FAQ
+        </a>
+        <a href="../news/" class="navbar-item">
+          News
+        </a>
+        <a href="../about/" class="navbar-item">
+          About
+        </a>
+        <a href="../translate/" class="navbar-item">
+          Translate
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    
+<section class="article content-padding">
+  <div class="content-container">
+    <ul id="breadcrumbs" class="bd-breadcrumbs">
+  
+  <li class="breadcrumb-item breadcrumb-home"><a href="../"><i class="fas fa-home"></i></a></li>
+  
+  <li class="breadcrumb-item"><a href="../docs/">Maintainers&#39; documentation</a></li>
+</ul>
+
+    <h1>Maintainers&#39; documentation</h1>
+    
+    <div class="article-content">
+        <p>This page details existing patterns for setting up and deploying translations
+for project websites. As each project has their own set up, the patterns
+described here may not fit exactly, but they will help you understand the
+basic workflows.</p>
+<p>At least some of the tasks described here rely on scripts from
+<a href="https://github.com/Scientific-Python-Translations/automations/">https://github.com/Scientific-Python-Translations/automations/</a>.</p>
+<!-- separate actual steps maintainers need to take from internal crowdin implementation details -->
+<h2 id="integration-with-crowdin">Integration with Crowdin<a class="headerlink" href="#integration-with-crowdin" title="Link to this heading">#</a></h2>
+<p><a href="https://scientific-python.crowdin.com/">Crowdin</a> provides GitHub integration
+tools to sync all translated content from the Crowdin web interface into project
+websites and vice-versa. However, a few adaptations are needed. The following
+steps describe what maintainers need to do to set up the integration. See <a href="../docs/#automations"></a> for more details on this script.</p>
+<h3 id="setting-up-crowdin">Setting up Crowdin<a class="headerlink" href="#setting-up-crowdin" title="Link to this heading">#</a></h3>
+<p>Create a Crowdin project for your repository and turn on synchronization
+between Crowdin and your source repo. If you planning on using the
+<a href="https://scientific-python.crowdin.com/">Scientific Python Crowdin workspace</a>,
+please reach out to the
+<a href="https://discord.com/invite/vur45CbwMz">Scientific Python translations team on discord</a>
+for help. For more information, see
+<a href="https://support.crowdin.com/enterprise/github-integration/">Crowdin&rsquo;s documentation</a>.</p>
+<p>To prevent extra activity in the original source repository, we recommend
+creating a separate repository for the translations under
+<a href="https://github.com/scientific-python-translations">https://github.com/scientific-python-translations</a> with a GitHub action to sync
+the translations to the original repository (see
+<a href="https://github.com/Scientific-Python-Translations/scipy.org-translations/blob/main/.github/workflows/sync.yml">sync.yml</a>
+for an example).</p>
+<h3 id="announce-your-project-to-potential-translators">Announce your project to potential translators<a class="headerlink" href="#announce-your-project-to-potential-translators" title="Link to this heading">#</a></h3>
+<p>After your project is set up, you will have to add translators as members to
+your Crowdin project so they can start translating. The general best practice is
+to have two people per language (one translator, one reviewer) to ensure the
+quality of the translations. However, your translations will not be published
+until you approve them, so you can start with one translator and add a reviewer
+later.</p>
+<p>You can find potential translators by reaching out in the <code>#translation</code> channel
+on the <a href="https://discord.com/invite/vur45CbwMz">Scientific Python Discord server</a>.</p>
+<h3 id="merging-translations">Merging translations<a class="headerlink" href="#merging-translations" title="Link to this heading">#</a></h3>
+<p>As translators work on the Crowdin platform, a Pull Request is automatically
+created in the project repository. This PR <strong>should not</strong> be merged, as it
+contains all translations for all languages (see
+<a href="https://github.com/numpy/numpy.org/pull/778">numpy/numpy.org#778</a> for an
+example). If your website is set up through the Scientific Python Translations
+org, this PR will have the <code>do-not-merge</code> label applied to it.</p>
+<p>After translations for a language are completed and ready to be deployed, you
+should:</p>
+<ol>
+<li>Go to the repository corresponding to your project&rsquo;s sources under
+<a href="https://github.com/Scientific-Python-Translations">https://github.com/Scientific-Python-Translations</a></li>
+<li>Go to the Actions tab</li>
+<li>Manually trigger the &ldquo;Create translations PR&rdquo; workflow, with the language
+code for your language of interest as input.</li>
+</ol>
+<center><img alt="Screenshot of the Actions tab from GitHub, with the Create translations PR workflow highlighted." src="../images/create_translations.png" width=800/></center>
+<center><img alt="Screenshot of the Run workflow dialog from GitHub, with an input field labeled Crowding language code for the language of interest" src="../images/run_workflow.png" width=800/></center>
+<p>After these steps, a PR will be created to your website repo with the
+translations for the language you selected (see
+<a href="https://github.com/numpy/numpy.org/pull/774">numpy/numpy.org#774</a> for an example.) This PR should be
+merged when you are ready to publish the translations.</p>
+<h3 id="cleaning-up">Cleaning up<a class="headerlink" href="#cleaning-up" title="Link to this heading">#</a></h3>
+<p>After merging the translations PR, the Crowdin service branch (by default, named <code>l10n_main</code>) will have merge conflicts with <code>main</code>. To fix this, delete the Crowdin service branch. Crowdin will automatically recreate the service branch with merge conflicts resolved. This same process can also be used to resolve merge conflicts if translations are updated outside of Crowdin.</p>
+<h2 id="automation-details">Automation details<a class="headerlink" href="#automation-details" title="Link to this heading">#</a></h2>
+<p>Once a GitHub repository has been synced to Crowdin using the Scientific Python
+set up, the
+<a href="https://github.com/Scientific-Python-Translations/automations/blob/main/scripts/create_branch_for_language.sh"><code>create_branch_for_language.sh</code> script</a>
+is used to create a new branch including all (and only) commits from Crowdin&rsquo;s
+branch for a particular language of interest. This script is useful because:</p>
+<ol>
+<li>
+<p>Crowdin will keep commits for all the available languages under translation
+in the same branch. However, we prefer to be able to create pull requests for
+one language at a time to keep Pull Request reviews smaller and easier to manage.</p>
+</li>
+<li>
+<p>There are times when translations must be edited manually (outside of
+Crowdin) due to incorrect segmentation of the content into strings for
+translation. Crowdin&rsquo;s branch can only be edited through the Crowdin UI, and
+commits pushed to it outside of Crowdin will be lost when the branch is
+synced. By creating a new branch with only the commits we are interested in,
+we can bypass this limitation.</p>
+</li>
+</ol>
+<p>Ideally you will <strong>not</strong> have to run the <code>create_branch_for_language.sh</code> script
+directly, but can include it as part of your website deployment process (see,
+for example, <a href="https://github.com/numpy/numpy.org/pull/772">numpy/numpy.org#772</a>)</p>
+<div class="admonition important">
+  <div class="admonition-title"> Important</div>
+  <p>
+    <p>To prevent future conflicts with the GitHub/Crowdin integration, it is important
+that you set your translations to duplicate strings to be an exact match. To do
+this, navigate to your project&rsquo;s Settings in Crowdin, select Import and under
+&ldquo;Source strings&rdquo; -&gt; &ldquo;Duplicates&rdquo; choose &ldquo;Hide (regular detection)&rdquo;.</p>
+<center><img alt="Screenshot of the Crowdin Settings showing the 'Hide (regular detection)' option." src="../images/duplicate_strings.png" width=800/></center>
+  </p>
+</div>
+
+<h2 id="setting-up-a-language-switcher">Setting up a language switcher<a class="headerlink" href="#setting-up-a-language-switcher" title="Link to this heading">#</a></h2>
+<p>This work is in progress - follow (issue #) for details.</p>
+<h3 id="scientific-python-hugo-theme">Scientific Python Hugo Theme<a class="headerlink" href="#scientific-python-hugo-theme" title="Link to this heading">#</a></h3>
+<h3 id="pydata-sphinx-theme">PyData Sphinx Theme<a class="headerlink" href="#pydata-sphinx-theme" title="Link to this heading">#</a></h3>
+<p>This work is in progress - follow <a href="https://github.com/pydata/pydata-sphinx-theme/issues/507">pydata/pydata-sphinx-theme#507</a> for details.</p>
+<h2 id="known-limitations">Known limitations<a class="headerlink" href="#known-limitations" title="Link to this heading">#</a></h2>
+<h3 id="missing-translations">Missing translations<a class="headerlink" href="#missing-translations" title="Link to this heading">#</a></h3>
+<p>Translations may not always be up to date for items such as news items and
+release announcements. In this case, your project can decide what to do with
+these items (for example, keep them in English or hide them from the deployed
+site.)</p>
+
+    </div>
+  </div>
+  <div id="shortcuts-container">
+    <div id="shortcuts">
+        <div id="shortcuts-header"><i class="fa-solid fa-list"></i> On this page</div>
+    </div>
+</div>
+
+</section>
+
+
+    
+    <div id="backtotop"><a href="#" id="backtotop-color"></a></div>
+
+    
+    
+
+<footer id="footer">
+  <div class="container">
+    <div id="footer-columns">
+      <div id="footer-logo-column">
+        <img id="footer-logo" src="../images/logo.svg" alt="Scientific Python Translations logo. ">
+      </div>
+      <div class="footer-column">
+        <div class="footer-item">
+          <a href="../faq/">
+            FAQ
+          </a>
+        </div>
+        <div class="footer-item">
+          <a href="../news/">
+            News
+          </a>
+        </div>
+        <div class="footer-item">
+          <a href="../about/">
+            About
+          </a>
+        </div>
+      </div>
+      <div class="footer-column">
+      </div>
+      <div class="footer-column">
+      </div>
+        <div class="footer-actions">
+          
+
+          <div class="community-icons">
+            <a href="https://github.com/scientific-python-translations/" aria-label="https://github.com/scientific-python-translations/">
+              
+
+
+
+
+
+<svg class="icon github-icon" viewBox="0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+
+
+            </a>
+          </div>
+          <div class="copyright">&copy; 2025 Scientific Python Translations team. All rights reserved.</div>
+        </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+
+<script type="text/javascript" src=../js/bundle.min.js></script><script type="text/javascript">setupShortcuts(maxLevel= 2 );</script>
+</html>
