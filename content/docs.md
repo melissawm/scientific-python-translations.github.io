@@ -105,8 +105,8 @@ for example, [numpy/numpy.org#772](https://github.com/numpy/numpy.org/pull/772))
 
 {{< admonition important >}}
 To prevent future conflicts with the GitHub/Crowdin integration, it is important
-that you set your translations to duplicate strings to be an exact match. To do
-this, navigate to your project's Settings in Crowdin, select Import and under
+that you configure Crowdin to have duplicate strings share the same translation.
+To do this, navigate to your project's Settings in Crowdin, select Import and under
 "Source strings" -> "Duplicates" choose "Hide (regular detection)".
 
 <center><img alt="Screenshot of the Crowdin Settings showing the 'Hide (regular detection)' option." src="../images/duplicate_strings.png" width=800/></center>
